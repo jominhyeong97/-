@@ -39,5 +39,5 @@ primary key(post_id, members_id));
 create table members(members_id bigint not null auto_increment, name varchar(20) not null, password varchar(255) not null, phone_number varchar(20) not null unique, nickname varchar(20) not null unique, 
 birthday date not null, email varchar(50) not null unique, `role` enum('Admin','Teacher','User') not null, signup_type enum('Email','Kakao','Google','Naver') not null, created_at datetime not null, 
 updated_at datetime not null, `card` varchar(50) unique, bank varchar(50), account_number varchar(50), point int unsigned not null, 
-primary key(members_id));
+primary key(members_id)); dd
 
